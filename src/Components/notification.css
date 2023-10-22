@@ -1,0 +1,11 @@
+.notification_bar{
+    background-color: gray;
+    position: absolute;
+    height: auto;
+    width: 30%;
+    right: 170px;
+    z-index: 99;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+}
