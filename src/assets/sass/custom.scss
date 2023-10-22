@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+$body-bg: #f3f4ff;
+$body-color: #050516;
+
+.pointer {
+  cursor: pointer;
+}
+
+$theme-colors: (
+  "site-primary": #0d2b60,
+  "site-primary-lite": #2e73ec,
+  "site-muted": #9899b3,
+  "site-lite": #f8f7fc,
+  "site-secondary": #eaeaf0,
+  "site-gray": #e8f0ff,
+  "site-lite-gray": #f7f8fa,
+  "site-sky-lite": #d9e4f8,
+  "site-main": #f7f8fa,
+  "site-gray-500": #666885,
+  "site-gray-600": #474967,
+  "site-gray-900": #101128,
+  "site-white": #ffffff,
+  "site-red": #e74e69,
+  "site-green": #2b9943,
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+$weights: 100 200 300 400 500 600 700 800;
+@each $weight in $weights {
+  .fw--#{$weight} {
+    font-weight: $weight;
+  }
+}
+@for $size from 12 through 96 {
+  .fs--#{$size} {
+    font-size: $size/16 + rem;
+  }
+}
